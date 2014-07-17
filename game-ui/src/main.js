@@ -135,8 +135,6 @@ function toAbsoluteURL(url) {
         return url;
     }
 
-	return location.protocol + "//" + location.host + "/1.jpg";
-
     if(url.indexOf("://") < 0) {
         if(url[0] === '/') {
             absURL = location.protocol + "//" + location.host + url;
