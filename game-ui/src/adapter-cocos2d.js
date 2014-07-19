@@ -4,11 +4,6 @@ Adapter.init = function() {
 	Adapter.engine = cc;
 
 	Adapter.loadAssets = function(srcs) {
-		for(var i = 0; i < srcs.length; i++) {
-			var iter = srcs[i];
-			//game.load.image(iter, iter)
-		}
-		/*TODO*/
 		return;
 	}
 	

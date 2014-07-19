@@ -1,4 +1,4 @@
-var s_bg = "bg.jpg";
+var s_bg = "res/bg.jpg";
 
 var g_resources = [
     //image

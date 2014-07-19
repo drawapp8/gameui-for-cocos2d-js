@@ -20,7 +20,7 @@ GameUI.preloadAssetsInUIData = function(uiData, engine) {
 	Adapter.init();
 	Adapter.loadAssets(images);
 
-	return;
+	return images;
 }
 
 GameUI.init = function(game, stage, uiData, viewWidth, viewHeight) {
@@ -193,11 +193,6 @@ Adapter.init = function() {
 	Adapter.engine = cc;
 
 	Adapter.loadAssets = function(srcs) {
-		for(var i = 0; i < srcs.length; i++) {
-			var iter = srcs[i];
-			//game.load.image(iter, iter)
-		}
-		/*TODO*/
 		return;
 	}
 	
