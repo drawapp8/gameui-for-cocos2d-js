@@ -50,12 +50,15 @@ GameUI.setStage = function(stage) {
 	return;
 }
 
+GameUI.windows = [];
+
 GameUI.openWindow = function(windowName, x, y, width, height, onWindowClose, initData) {
 	var cantkWidget = lookUpWidget(GameUI.rootWidget, windowName);
 	var win = GameUI.createUISprite(cantkWidget, x, y, width, height, onWindowClose, initData);
 	
 	if(win) {
 		GameUI.stage.addChild(win);
+		GameUI.windows.push(cantkWidget);
 	}
 
 	return win;
@@ -89,6 +92,7 @@ GameUI.loadScene = function(windowName, onSpriteCreate, initData) {
 		GameUI.stage.addChild(bgSprite);
 	}
 
+	GameUI.windows.push(win);
 	var n = win.children.length;
 	for(var i = 0; i < n; i++) {
 		var iter = win.children[i];
@@ -187,6 +191,36 @@ function lookUpWidget(rootWidget, windowName, widgetName) {
 };
 
 
+GameUI.getHTMLElementPosition = function (element) {
+        var docElem = document.documentElement;
+        var win = window;
+        var box = null;
+        if (typeof element.getBoundingClientRect === 'function') {
+            box = element.getBoundingClientRect();
+        } else {
+            if (element instanceof HTMLCanvasElement) {
+                box = {
+                    left: 0,
+                    top: 0,
+                    width: element.width,
+                    height: element.height
+                };
+            } else {
+                box = {
+                    left: 0,
+                    top: 0,
+                    width: parseInt(element.style.width),
+                    height: parseInt(element.style.height)
+                };
+            }
+        }
+        return {
+            left: box.left + win.pageXOffset - docElem.clientLeft,
+            top: box.top + win.pageYOffset - docElem.clientTop,
+            width: box.width,
+            height: box.height
+        };
+    };
 var Adapter = {};
 
 Adapter.init = function() {
@@ -256,6 +290,25 @@ Adapter.init = function() {
 		y = Math.round(GameUI.viewHeight - y - h);
 		var rect = cc.rect(x,y,w,h);
 		var sprite = cc.Sprite.create(texture, rect);
+	
+		sprite.getAbsPosition = function() {
+			var point = {};
+			var canvas = cc._canvas;
+			var pos = GameUI.getHTMLElementPosition(canvas);
+
+			point.x = this.getX();
+			point.y = this.getY();
+			point = sprite.convertToWorldSpace(point);
+
+			point.x += pos.left;
+			point.y += pos.top;
+
+			return point;
+		}
+		
+		sprite.getViewScale = function() {
+			return cc.view._scaleX;
+		}
 
 		sprite.getX = function() {
 			return this.getPositionX();
@@ -768,6 +821,7 @@ CanTK.UIElement.prototype.closeWindow = function(retInfo) {
 
 	if(view.widget.isUIWindow) {
 		win = view.widget;
+		GameUI.windows.remove(win);
 	}
 	view.widget.setView(null, true);
 
@@ -807,6 +861,7 @@ CanTK.UIElement.prototype.saveState = function() {
 	return;
 };
 
+
 GameUI.createUISprite = function(cantkWidget, x, y, width, height, onClose, initData) {
 	var canvas = document.createElement('canvas');
 
@@ -840,19 +895,6 @@ GameUI.createUISprite = function(cantkWidget, x, y, width, height, onClose, init
 	sprite.name = cantkWidget.name;
 	sprite.widget.saveState();
 	sprite.widget.setView(sprite);
-
-	if(sprite.widget.isUIWindow) {
-		var win = sprite.widget;
-
-		delete win.parentShape;
-		win.callOnBeforeOpen(initData);
-		win.onClose = onClose;
-
-		setTimeout(function() {
-			win.callOnOpen(initData);
-			win.postRedraw();
-		}, 20);
-	}
 
 	////////////////////////////////////////////////////////////////////
 	
@@ -980,6 +1022,19 @@ GameUI.createUISprite = function(cantkWidget, x, y, width, height, onClose, init
 		this.widget.onPointerUp(point);
 
 		return;
+	}
+
+	if(sprite.widget.isUIWindow) {
+		var win = sprite.widget;
+
+		delete win.parentShape;
+		win.callOnBeforeOpen(initData);
+		win.onClose = onClose;
+
+		setTimeout(function() {
+			win.callOnOpen(initData);
+			win.postRedraw();
+		}, 20);
 	}
 
 	sprite.updateWidget();

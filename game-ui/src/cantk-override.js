@@ -45,6 +45,7 @@ CanTK.UIElement.prototype.closeWindow = function(retInfo) {
 
 	if(view.widget.isUIWindow) {
 		win = view.widget;
+		GameUI.windows.remove(win);
 	}
 	view.widget.setView(null, true);
 
@@ -83,3 +84,4 @@ CanTK.UIElement.prototype.saveState = function() {
 
 	return;
 };
+

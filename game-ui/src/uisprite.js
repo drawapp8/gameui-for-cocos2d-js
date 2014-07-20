@@ -33,19 +33,6 @@ GameUI.createUISprite = function(cantkWidget, x, y, width, height, onClose, init
 	sprite.widget.saveState();
 	sprite.widget.setView(sprite);
 
-	if(sprite.widget.isUIWindow) {
-		var win = sprite.widget;
-
-		delete win.parentShape;
-		win.callOnBeforeOpen(initData);
-		win.onClose = onClose;
-
-		setTimeout(function() {
-			win.callOnOpen(initData);
-			win.postRedraw();
-		}, 20);
-	}
-
 	////////////////////////////////////////////////////////////////////
 	
 	sprite.setDisableRepaint = function(disableRepaint) {
@@ -172,6 +159,19 @@ GameUI.createUISprite = function(cantkWidget, x, y, width, height, onClose, init
 		this.widget.onPointerUp(point);
 
 		return;
+	}
+
+	if(sprite.widget.isUIWindow) {
+		var win = sprite.widget;
+
+		delete win.parentShape;
+		win.callOnBeforeOpen(initData);
+		win.onClose = onClose;
+
+		setTimeout(function() {
+			win.callOnOpen(initData);
+			win.postRedraw();
+		}, 20);
 	}
 
 	sprite.updateWidget();

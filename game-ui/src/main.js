@@ -49,12 +49,15 @@ GameUI.setStage = function(stage) {
 	return;
 }
 
+GameUI.windows = [];
+
 GameUI.openWindow = function(windowName, x, y, width, height, onWindowClose, initData) {
 	var cantkWidget = lookUpWidget(GameUI.rootWidget, windowName);
 	var win = GameUI.createUISprite(cantkWidget, x, y, width, height, onWindowClose, initData);
 	
 	if(win) {
 		GameUI.stage.addChild(win);
+		GameUI.windows.push(cantkWidget);
 	}
 
 	return win;
@@ -88,6 +91,7 @@ GameUI.loadScene = function(windowName, onSpriteCreate, initData) {
 		GameUI.stage.addChild(bgSprite);
 	}
 
+	GameUI.windows.push(win);
 	var n = win.children.length;
 	for(var i = 0; i < n; i++) {
 		var iter = win.children[i];
@@ -186,3 +190,33 @@ function lookUpWidget(rootWidget, windowName, widgetName) {
 };
 
 
+GameUI.getHTMLElementPosition = function (element) {
+        var docElem = document.documentElement;
+        var win = window;
+        var box = null;
+        if (typeof element.getBoundingClientRect === 'function') {
+            box = element.getBoundingClientRect();
+        } else {
+            if (element instanceof HTMLCanvasElement) {
+                box = {
+                    left: 0,
+                    top: 0,
+                    width: element.width,
+                    height: element.height
+                };
+            } else {
+                box = {
+                    left: 0,
+                    top: 0,
+                    width: parseInt(element.style.width),
+                    height: parseInt(element.style.height)
+                };
+            }
+        }
+        return {
+            left: box.left + win.pageXOffset - docElem.clientLeft,
+            top: box.top + win.pageYOffset - docElem.clientTop,
+            width: box.width,
+            height: box.height
+        };
+    };

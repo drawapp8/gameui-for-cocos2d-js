@@ -67,6 +67,25 @@ Adapter.init = function() {
 		y = Math.round(GameUI.viewHeight - y - h);
 		var rect = cc.rect(x,y,w,h);
 		var sprite = cc.Sprite.create(texture, rect);
+	
+		sprite.getAbsPosition = function() {
+			var point = {};
+			var canvas = cc._canvas;
+			var pos = GameUI.getHTMLElementPosition(canvas);
+
+			point.x = this.getX();
+			point.y = this.getY();
+			point = sprite.convertToWorldSpace(point);
+
+			point.x += pos.left;
+			point.y += pos.top;
+
+			return point;
+		}
+		
+		sprite.getViewScale = function() {
+			return cc.view._scaleX;
+		}
 
 		sprite.getX = function() {
 			return this.getPositionX();
