@@ -35,6 +35,11 @@ GameUI.init = function(game, stage, uiData, viewWidth, viewHeight) {
 	CanTK.init();
 
 	var config = CanTK.detectDeviceConfig();
+
+	if(uiData.config) {
+		config.platform = uiData.config.platform;
+	}
+
 	GameUI.rootWidget = CanTK.createElementWithJson(wm ? wm : uiData);
 	GameUI.rootWidget.setDeviceConfig(uiData.config);	
 	GameUI.rootWidget.setDeviceConfig(config);	
