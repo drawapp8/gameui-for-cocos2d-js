@@ -137,7 +137,7 @@ var guiData= {
 					"yAttr": 0,
 					"widthAttr": 2,
 					"heightAttr": 0,
-					"current": 29,
+					"current": 11,
 					"showLoadingProgress": true,
 					"progressBarBorderColor": "White",
 					"progressBarFillColor": "Gold",
@@ -7601,142 +7601,6 @@ var guiData= {
 								{
 									"type": "ui-button-group",
 									"name": "ui-button-group",
-									"w": 720,
-									"h": 109,
-									"x": 0,
-									"y": 113,
-									"text": "",
-									"hMargin": 4,
-									"vMargin": 4,
-									"xAttr": 0,
-									"yAttr": 0,
-									"widthAttr": 2,
-									"heightAttr": 0,
-									"wMin": 100,
-									"wMax": 1000,
-									"hMin": 40,
-									"hMax": 120,
-									"buttonMaxWidth": 200,
-									"xParam": 1,
-									"yParam": 1,
-									"widthParam": 1,
-									"heightParam": 1,
-									"isUIButtonGroup": true,
-									"isUIElement": true,
-									"hasChildren": true,
-									"style": {
-										"lineWidth": 2,
-										"lineColor": "Green",
-										"fillColor": "white",
-										"textColor": "Black",
-										"fontSize": 21,
-										"fontFamily": "serif",
-										"enableGradient": true
-									},
-									"events": {
-										"onClick": "console.log(\"onClick was triggered\")",
-										"onInit": null
-									},
-									"images": {
-										"display": 2,
-										"default_bg": "drawapp8/images/theme/default/android/button_group_bg.9.png"
-									},
-									"children": [
-										{
-											"type": "ui-button",
-											"name": "ui-button",
-											"w": 200,
-											"h": 101,
-											"x": 82,
-											"y": 4,
-											"text": "",
-											"vTextAlign": "middle",
-											"hTextAlign": "center",
-											"xAttr": 0,
-											"yAttr": 3,
-											"widthAttr": 0,
-											"heightAttr": 0,
-											"wMin": 50,
-											"hMin": 36.57142857142857,
-											"enableAutoScaleFontSize": true,
-											"xParam": 1,
-											"yParam": 1,
-											"widthParam": 1,
-											"heightParam": 1,
-											"isUIButton": true,
-											"isUIElement": true,
-											"hasChildren": true,
-											"style": {
-												"lineWidth": 2,
-												"lineColor": "Green",
-												"fillColor": "white",
-												"textColor": "Black",
-												"fontSize": 21,
-												"fontFamily": "serif",
-												"enableGradient": true
-											},
-											"events": {
-												"onClick": "console.log(\"onClick was triggered\")",
-												"onOnUpdateTransform": null
-											},
-											"images": {
-												"display": 2,
-												"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
-												"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
-												"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
-												"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
-											}
-										},
-										{
-											"type": "ui-button",
-											"name": "ui-button",
-											"w": 200,
-											"h": 101,
-											"x": 438,
-											"y": 4,
-											"text": "",
-											"vTextAlign": "middle",
-											"hTextAlign": "center",
-											"xAttr": 0,
-											"yAttr": 3,
-											"widthAttr": 0,
-											"heightAttr": 0,
-											"wMin": 50,
-											"hMin": 36.57142857142857,
-											"enableAutoScaleFontSize": true,
-											"xParam": 1,
-											"yParam": 1,
-											"widthParam": 1,
-											"heightParam": 1,
-											"isUIButton": true,
-											"isUIElement": true,
-											"hasChildren": true,
-											"style": {
-												"lineWidth": 2,
-												"lineColor": "Green",
-												"fillColor": "white",
-												"textColor": "Black",
-												"fontSize": 21,
-												"fontFamily": "serif",
-												"enableGradient": true
-											},
-											"events": {
-												"onClick": "console.log(\"onClick was triggered\")",
-												"onOnUpdateTransform": null
-											},
-											"images": {
-												"display": 2,
-												"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
-												"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
-												"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
-												"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
-											}
-										}
-									]
-								},
-								{
-									"type": "ui-button-group",
-									"name": "ui-button-group",
 									"w": 719,
 									"h": 109,
 									"x": 0,
@@ -7763,19 +7627,17 @@ var guiData= {
 									"style": {
 										"lineWidth": 2,
 										"lineColor": "Green",
-										"fillColor": "white",
+										"fillColor": "rgba(0,0,0,0)",
 										"textColor": "Black",
 										"fontSize": 21,
-										"fontFamily": "serif",
-										"enableGradient": true
+										"fontFamily": "serif"
 									},
 									"events": {
 										"onClick": "console.log(\"onClick was triggered\")",
 										"onInit": null
 									},
 									"images": {
-										"display": 2,
-										"default_bg": "drawapp8/images/theme/default/android/button_group_bg.9.png"
+										"display": 2
 									},
 									"children": [
 										{
@@ -7785,7 +7647,7 @@ var guiData= {
 											"h": 101,
 											"x": 22,
 											"y": 4,
-											"text": "",
+											"text": "1",
 											"vTextAlign": "middle",
 											"hTextAlign": "center",
 											"xAttr": 0,
@@ -7793,7 +7655,7 @@ var guiData= {
 											"widthAttr": 0,
 											"heightAttr": 0,
 											"wMin": 50,
-											"hMin": 36.57142857142857,
+											"hMin": 50,
 											"enableAutoScaleFontSize": true,
 											"xParam": 1,
 											"yParam": 1,
@@ -7804,11 +7666,12 @@ var guiData= {
 											"hasChildren": true,
 											"style": {
 												"lineWidth": 2,
-												"lineColor": "Green",
-												"fillColor": "white",
-												"textColor": "Black",
-												"fontSize": 21,
+												"lineColor": "Red",
+												"fillColor": "White",
+												"textColor": "#E0E0E0",
+												"fontSize": 28,
 												"fontFamily": "serif",
+												"textB": true,
 												"enableGradient": true
 											},
 											"events": {
@@ -7817,10 +7680,10 @@ var guiData= {
 											},
 											"images": {
 												"display": 2,
-												"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
-												"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
-												"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
-												"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
+												"focused_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+												"active_bg": "drawapp8/images/common/icons/xhdpi/button_blue_active.9.png",
+												"normal_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+												"disable_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png"
 											}
 										},
 										{
@@ -7830,7 +7693,7 @@ var guiData= {
 											"h": 101,
 											"x": 259,
 											"y": 4,
-											"text": "",
+											"text": "2",
 											"vTextAlign": "middle",
 											"hTextAlign": "center",
 											"xAttr": 0,
@@ -7838,7 +7701,7 @@ var guiData= {
 											"widthAttr": 0,
 											"heightAttr": 0,
 											"wMin": 50,
-											"hMin": 36.57142857142857,
+											"hMin": 50,
 											"enableAutoScaleFontSize": true,
 											"xParam": 1,
 											"yParam": 1,
@@ -7849,11 +7712,12 @@ var guiData= {
 											"hasChildren": true,
 											"style": {
 												"lineWidth": 2,
-												"lineColor": "Green",
-												"fillColor": "white",
-												"textColor": "Black",
-												"fontSize": 21,
+												"lineColor": "Red",
+												"fillColor": "White",
+												"textColor": "#E0E0E0",
+												"fontSize": 28,
 												"fontFamily": "serif",
+												"textB": true,
 												"enableGradient": true
 											},
 											"events": {
@@ -7862,10 +7726,10 @@ var guiData= {
 											},
 											"images": {
 												"display": 2,
-												"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
-												"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
-												"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
-												"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
+												"focused_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+												"active_bg": "drawapp8/images/common/icons/xhdpi/button_blue_active.9.png",
+												"normal_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+												"disable_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png"
 											}
 										},
 										{
@@ -7875,7 +7739,7 @@ var guiData= {
 											"h": 101,
 											"x": 496,
 											"y": 4,
-											"text": "",
+											"text": "3",
 											"vTextAlign": "middle",
 											"hTextAlign": "center",
 											"xAttr": 0,
@@ -7883,7 +7747,7 @@ var guiData= {
 											"widthAttr": 0,
 											"heightAttr": 0,
 											"wMin": 50,
-											"hMin": 36.57142857142857,
+											"hMin": 50,
 											"enableAutoScaleFontSize": true,
 											"xParam": 1,
 											"yParam": 1,
@@ -7894,11 +7758,12 @@ var guiData= {
 											"hasChildren": true,
 											"style": {
 												"lineWidth": 2,
-												"lineColor": "Green",
-												"fillColor": "white",
-												"textColor": "Black",
-												"fontSize": 21,
+												"lineColor": "Red",
+												"fillColor": "White",
+												"textColor": "#E0E0E0",
+												"fontSize": 28,
 												"fontFamily": "serif",
+												"textB": true,
 												"enableGradient": true
 											},
 											"events": {
@@ -7907,10 +7772,10 @@ var guiData= {
 											},
 											"images": {
 												"display": 2,
-												"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
-												"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
-												"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
-												"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
+												"focused_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+												"active_bg": "drawapp8/images/common/icons/xhdpi/button_blue_active.9.png",
+												"normal_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+												"disable_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png"
 											}
 										}
 									]
@@ -8127,7 +7992,7 @@ var guiData= {
 											"widthAttr": 0,
 											"heightAttr": 2,
 											"roundRadius": 4,
-											"value": true,
+											"value": false,
 											"xParam": 1,
 											"yParam": 1,
 											"widthParam": 1,
@@ -9277,9 +9142,9 @@ var guiData= {
 								{
 									"type": "ui-button",
 									"name": "ui-button",
-									"w": 185,
-									"h": 89,
-									"x": 268,
+									"w": 171,
+									"h": 80,
+									"x": 275,
 									"y": 393,
 									"text": "Start",
 									"vTextAlign": "middle",
@@ -9289,7 +9154,7 @@ var guiData= {
 									"widthAttr": 0,
 									"heightAttr": 0,
 									"wMin": 50,
-									"hMin": 41.14285714285714,
+									"hMin": 50,
 									"enableAutoScaleFontSize": true,
 									"xParam": 1,
 									"yParam": 1,
@@ -9301,39 +9166,12 @@ var guiData= {
 									"style": {
 										"lineWidth": 2,
 										"lineColor": "Red",
+										"fillColor": "White",
 										"textColor": "#E0E0E0",
-										"fontSize": 26,
+										"fontSize": 28,
 										"fontFamily": "serif",
 										"textB": true,
-										"enableGradient": true,
-										"fillColor": {
-											"x0": 0,
-											"y0": 0,
-											"x1": 0,
-											"y1": -1,
-											"data": [
-												{
-													"o": 0,
-													"c": "#90d290"
-												},
-												{
-													"o": 0.25,
-													"c": "#76c176"
-												},
-												{
-													"o": 0.5,
-													"c": "#58ae58"
-												},
-												{
-													"o": 0.75,
-													"c": "#3c9c3c"
-												},
-												{
-													"o": 1,
-													"c": "#1d891d"
-												}
-											]
-										}
+										"enableGradient": true
 									},
 									"events": {
 										"onClick": "var bar = this.getWindow().findChildByName(\"ui-wait-bar\");\nvar box = this.getWindow().findChildByName(\"ui-wait-box\");\nif(bar) {\n    if(bar.isRunning()) {\n        bar.stop()\n        box.stop()\n        this.setText(\"Start\");\n    }\n    else {\n        bar.start();\n        box.start();\n        this.setText(\"Stop\");\n    }\n}\n",
@@ -9341,10 +9179,10 @@ var guiData= {
 									},
 									"images": {
 										"display": 2,
-										"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
-										"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
-										"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
-										"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
+										"focused_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+										"active_bg": "drawapp8/images/common/icons/xhdpi/button_blue_active.9.png",
+										"normal_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+										"disable_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png"
 									}
 								}
 							]
@@ -11461,10 +11299,10 @@ var guiData= {
 								{
 									"type": "ui-button",
 									"name": "ui-button",
-									"w": 159,
-									"h": 87,
-									"x": 281,
-									"y": 183,
+									"w": 171,
+									"h": 80,
+									"x": 275,
+									"y": 182,
 									"text": "Dialog1",
 									"vTextAlign": "middle",
 									"hTextAlign": "center",
@@ -11473,7 +11311,7 @@ var guiData= {
 									"widthAttr": 0,
 									"heightAttr": 0,
 									"wMin": 50,
-									"hMin": 40,
+									"hMin": 50,
 									"enableAutoScaleFontSize": true,
 									"xParam": 1,
 									"yParam": 1,
@@ -11485,39 +11323,12 @@ var guiData= {
 									"style": {
 										"lineWidth": 2,
 										"lineColor": "Red",
+										"fillColor": "White",
 										"textColor": "#E0E0E0",
-										"fontSize": 26,
+										"fontSize": 28,
 										"fontFamily": "serif",
 										"textB": true,
-										"enableGradient": true,
-										"fillColor": {
-											"x0": 0,
-											"y0": 0,
-											"x1": 0,
-											"y1": -1,
-											"data": [
-												{
-													"o": 0,
-													"c": "#90d290"
-												},
-												{
-													"o": 0.25,
-													"c": "#76c176"
-												},
-												{
-													"o": 0.5,
-													"c": "#58ae58"
-												},
-												{
-													"o": 0.75,
-													"c": "#3c9c3c"
-												},
-												{
-													"o": 1,
-													"c": "#1d891d"
-												}
-											]
-										}
+										"enableGradient": true
 									},
 									"events": {
 										"onClick": "this.openWindow(\"dialog1\", \n\tfunction (retCode) {console.log(\"window closed.\");}, false);",
@@ -11525,19 +11336,19 @@ var guiData= {
 									},
 									"images": {
 										"display": 2,
-										"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
-										"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
-										"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
-										"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
+										"focused_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+										"active_bg": "drawapp8/images/common/icons/xhdpi/button_blue_active.9.png",
+										"normal_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+										"disable_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png"
 									}
 								},
 								{
 									"type": "ui-button",
 									"name": "ui-button",
-									"w": 159,
-									"h": 87,
-									"x": 281,
-									"y": 288,
+									"w": 171,
+									"h": 80,
+									"x": 275,
+									"y": 349,
 									"text": "Dialog2",
 									"vTextAlign": "middle",
 									"hTextAlign": "center",
@@ -11546,7 +11357,7 @@ var guiData= {
 									"widthAttr": 0,
 									"heightAttr": 0,
 									"wMin": 50,
-									"hMin": 40,
+									"hMin": 50,
 									"enableAutoScaleFontSize": true,
 									"xParam": 1,
 									"yParam": 1,
@@ -11558,39 +11369,12 @@ var guiData= {
 									"style": {
 										"lineWidth": 2,
 										"lineColor": "Red",
+										"fillColor": "White",
 										"textColor": "#E0E0E0",
-										"fontSize": 26,
+										"fontSize": 28,
 										"fontFamily": "serif",
 										"textB": true,
-										"enableGradient": true,
-										"fillColor": {
-											"x0": 0,
-											"y0": 0,
-											"x1": 0,
-											"y1": -1,
-											"data": [
-												{
-													"o": 0,
-													"c": "#90d290"
-												},
-												{
-													"o": 0.25,
-													"c": "#76c176"
-												},
-												{
-													"o": 0.5,
-													"c": "#58ae58"
-												},
-												{
-													"o": 0.75,
-													"c": "#3c9c3c"
-												},
-												{
-													"o": 1,
-													"c": "#1d891d"
-												}
-											]
-										}
+										"enableGradient": true
 									},
 									"events": {
 										"onClick": "this.openWindow(\"dialog2\", \n\tfunction (retCode) {console.log(\"window closed.\");}, false);",
@@ -11598,153 +11382,10 @@ var guiData= {
 									},
 									"images": {
 										"display": 2,
-										"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
-										"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
-										"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
-										"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
-									}
-								}
-							]
-						},
-						{
-							"type": "ui-dialog",
-							"name": "dialog1",
-							"w": 720,
-							"h": 398,
-							"x": 0,
-							"y": 421,
-							"text": "",
-							"hMargin": 6,
-							"vMargin": 6,
-							"xAttr": 3,
-							"yAttr": 3,
-							"widthAttr": 2,
-							"heightAttr": 0,
-							"animHint": "scale",
-							"xParam": 1,
-							"yParam": 1,
-							"widthParam": 1,
-							"heightParam": 1,
-							"isUIDialog": true,
-							"isUIPopupWindow": true,
-							"isUIWindow": true,
-							"isUIElement": true,
-							"hasChildren": true,
-							"closeWhenPointerUpOutside": false,
-							"sUIPopupWindow": true,
-							"style": {
-								"lineWidth": 2,
-								"lineColor": "Green",
-								"fillColor": "white",
-								"textColor": "Black",
-								"fontSize": 21,
-								"fontFamily": "serif",
-								"enableGradient": true
-							},
-							"events": {
-								"onClick": "console.log(\"onClick was triggered\")",
-								"onLoad": null,
-								"onUnload": null,
-								"onOpen": "console.log(\"onOpen was triggered\")",
-								"onBeforeOpen": null,
-								"onClose": "console.log(\"onClose was triggered\")",
-								"onSwitchToBack": null,
-								"onSwitchToFront": null,
-								"onGesture": "console.log(\"onGesture was triggered\")",
-								"onKeyDown": null,
-								"onKeyUp": null
-							},
-							"images": {
-								"display": 3,
-								"default_bg": "drawapp8/images/theme/default/android/dialog.9.png"
-							},
-							"children": [
-								{
-									"type": "ui-button",
-									"name": "ui-button",
-									"w": 210,
-									"h": 87,
-									"x": 255,
-									"y": 286,
-									"text": "OK",
-									"vTextAlign": "middle",
-									"hTextAlign": "center",
-									"xAttr": 3,
-									"yAttr": 0,
-									"widthAttr": 0,
-									"heightAttr": 0,
-									"wMin": 50,
-									"hMin": 40,
-									"enableAutoScaleFontSize": true,
-									"xParam": 1,
-									"yParam": 1,
-									"widthParam": 1,
-									"heightParam": 1,
-									"isUIButton": true,
-									"isUIElement": true,
-									"hasChildren": true,
-									"style": {
-										"lineWidth": 2,
-										"lineColor": "Green",
-										"fillColor": "white",
-										"textColor": "#F8F8F8",
-										"fontSize": 26,
-										"fontFamily": "serif",
-										"enableGradient": true
-									},
-									"events": {
-										"onClick": "var retCode = 0;\nthis.closeWindow(retCode);",
-										"onOnUpdateTransform": null
-									},
-									"images": {
-										"display": 2,
-										"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
-										"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
-										"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
-										"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
-									}
-								},
-								{
-									"type": "ui-label",
-									"name": "ui-label",
-									"w": 708,
-									"h": 39,
-									"x": 6,
-									"y": 135,
-									"text": "Are sure quit without save?",
-									"vTextAlign": "middle",
-									"hTextAlign": "center",
-									"xAttr": 3,
-									"yAttr": 0,
-									"widthAttr": 2,
-									"heightAttr": 0,
-									"autoAdjustHeight": false,
-									"xParam": 1,
-									"yParam": 1,
-									"widthParam": 1,
-									"heightParam": 1,
-									"isUILabel": true,
-									"isUIElement": true,
-									"hasChildren": true,
-									"ANIM_OLD_OUT": 1,
-									"ANIM_NEW_IN": 3,
-									"style": {
-										"lineWidth": 2,
-										"lineColor": "Green",
-										"fillColor": "white",
-										"textColor": "#F8F8F8",
-										"fontSize": 21,
-										"fontFamily": "serif",
-										"enableGradient": true
-									},
-									"events": {
-										"onClick": "console.log(\"onClick was triggered\")",
-										"onChanged": null,
-										"onOnUpdateTransform": null
-									},
-									"images": {
-										"display": 2,
-										"default_bg": "drawapp8/images/transparent.png"
+										"focused_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+										"active_bg": "drawapp8/images/common/icons/xhdpi/button_blue_active.9.png",
+										"normal_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+										"disable_bg": "drawapp8/images/common/icons/xhdpi/button_blue.9.png"
 									}
 								}
 							]
@@ -25800,6 +25441,451 @@ var guiData= {
 									}
 								}
 							]
+						},
+						{
+							"type": "ui-dialog",
+							"name": "dialog1",
+							"w": 720,
+							"h": 400,
+							"x": 0,
+							"y": 420,
+							"text": "",
+							"hMargin": 8,
+							"vMargin": 8,
+							"xAttr": 3,
+							"yAttr": 3,
+							"widthAttr": 2,
+							"heightAttr": 0,
+							"animHint": "scale",
+							"xParam": 1,
+							"yParam": 1,
+							"widthParam": 1,
+							"heightParam": 1,
+							"isUIDialog": true,
+							"isUIPopupWindow": true,
+							"isUIWindow": true,
+							"isUIElement": true,
+							"hasChildren": true,
+							"style": {
+								"lineWidth": 2,
+								"lineColor": "Green",
+								"fillColor": "white",
+								"textColor": "Black",
+								"fontSize": 24,
+								"fontFamily": "serif"
+							},
+							"events": {
+								"onClick": null,
+								"onLoad": null,
+								"onUnload": null,
+								"onOpen": "console.log(\"onOpen was triggered\")",
+								"onBeforeOpen": null,
+								"onClose": "console.log(\"onClose was triggered\")",
+								"onSwitchToBack": null,
+								"onSwitchToFront": null,
+								"onGesture": "console.log(\"onGesture was triggered\")",
+								"onKeyDown": null,
+								"onKeyUp": null
+							},
+							"images": {
+								"display": 3,
+								"default_bg": "drawapp8/images/theme/default/android/dialog.9.png"
+							},
+							"children": [
+								{
+									"type": "ui-label",
+									"name": "ui-label",
+									"w": 704,
+									"h": 40,
+									"x": 8,
+									"y": 130,
+									"text": "Are sure quit without save?",
+									"vTextAlign": "middle",
+									"hTextAlign": "center",
+									"xAttr": 3,
+									"yAttr": 2,
+									"widthAttr": 2,
+									"heightAttr": 0,
+									"xParam": 1,
+									"yParam": 0.3385416666666667,
+									"widthParam": 1,
+									"heightParam": 1,
+									"autoAdjustHeight": false,
+									"isUILabel": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Green",
+										"fillColor": "white",
+										"textColor": "#F8F8F8",
+										"fontSize": 24,
+										"fontFamily": "serif"
+									},
+									"events": {
+										"onClick": null,
+										"onChanged": null,
+										"onOnUpdateTransform": null
+									},
+									"images": {
+										"display": 2
+									}
+								},
+								{
+									"type": "ui-button",
+									"name": "ui-button",
+									"w": 204,
+									"h": 67,
+									"x": 106,
+									"y": 278,
+									"text": "Yes",
+									"vTextAlign": "middle",
+									"hTextAlign": "center",
+									"xAttr": 2,
+									"yAttr": 2,
+									"widthAttr": 1,
+									"heightAttr": 0,
+									"wMin": 50,
+									"hMin": 50,
+									"enableAutoScaleFontSize": true,
+									"xParam": 0.15056818181818182,
+									"yParam": 0.7239583333333334,
+									"widthParam": 0.2897727272727273,
+									"heightParam": 1,
+									"isUIButton": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"widthScaleMin": 88,
+									"widthScaleMax": 352,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Green",
+										"fillColor": "white",
+										"textColor": "#F8F8F8",
+										"fontSize": 32,
+										"fontFamily": "serif"
+									},
+									"events": {
+										"onClick": "var retCode = 0;\nthis.closeWindow(retCode);",
+										"onOnUpdateTransform": null
+									},
+									"images": {
+										"display": 2,
+										"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
+										"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
+										"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
+										"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
+									}
+								},
+								{
+									"type": "ui-button",
+									"name": "ui-button",
+									"w": 204,
+									"h": 67,
+									"x": 407,
+									"y": 274,
+									"text": "No",
+									"vTextAlign": "middle",
+									"hTextAlign": "center",
+									"xAttr": 2,
+									"yAttr": 2,
+									"widthAttr": 1,
+									"heightAttr": 0,
+									"wMin": 50,
+									"hMin": 50,
+									"enableAutoScaleFontSize": true,
+									"xParam": 0.578125,
+									"yParam": 0.7135416666666666,
+									"widthParam": 0.2897727272727273,
+									"heightParam": 1,
+									"isUIButton": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"widthScaleMin": 88,
+									"widthScaleMax": 352,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Green",
+										"fillColor": "white",
+										"textColor": "#F8F8F8",
+										"fontSize": 32,
+										"fontFamily": "serif"
+									},
+									"events": {
+										"onClick": "var retCode = 0;\nthis.closeWindow(retCode);",
+										"onOnUpdateTransform": null
+									},
+									"images": {
+										"display": 2,
+										"focused_bg": "drawapp8/images/theme/default/android/button_focused.9.png",
+										"active_bg": "drawapp8/images/theme/default/android/button_active.9.png",
+										"normal_bg": "drawapp8/images/theme/default/android/button_normal.9.png",
+										"disable_bg": "drawapp8/images/theme/default/android/button_disable.9.png"
+									}
+								}
+							]
+						},
+						{
+							"type": "ui-dialog",
+							"name": "dialog2",
+							"w": 720,
+							"h": 400,
+							"x": 0,
+							"y": 420,
+							"text": "",
+							"hMargin": 8,
+							"vMargin": 8,
+							"xAttr": 3,
+							"yAttr": 3,
+							"widthAttr": 2,
+							"heightAttr": 0,
+							"animHint": "scale",
+							"xParam": 1,
+							"yParam": 1,
+							"widthParam": 1,
+							"heightParam": 1,
+							"isUIDialog": true,
+							"isUIPopupWindow": true,
+							"isUIWindow": true,
+							"isUIElement": true,
+							"hasChildren": true,
+							"style": {
+								"lineWidth": 2,
+								"lineColor": "Green",
+								"fillColor": "white",
+								"textColor": "Black",
+								"fontSize": 24,
+								"fontFamily": "serif",
+								"enableGradient": true
+							},
+							"events": {
+								"onClick": null,
+								"onLoad": null,
+								"onUnload": null,
+								"onOpen": "console.log(\"onOpen was triggered\")",
+								"onBeforeOpen": null,
+								"onClose": "console.log(\"onClose was triggered\")",
+								"onSwitchToBack": null,
+								"onSwitchToFront": null,
+								"onGesture": "console.log(\"onGesture was triggered\")",
+								"onKeyDown": null,
+								"onKeyUp": null
+							},
+							"images": {
+								"display": 2,
+								"default_bg": "drawapp8/images/common/icons/dialog_bg_light.9.png"
+							},
+							"children": [
+								{
+									"type": "ui-label",
+									"name": "ui-label",
+									"w": 704,
+									"h": 40,
+									"x": 8,
+									"y": 130,
+									"text": "Are sure quit without save?",
+									"vTextAlign": "middle",
+									"hTextAlign": "center",
+									"xAttr": 3,
+									"yAttr": 2,
+									"widthAttr": 2,
+									"heightAttr": 0,
+									"autoAdjustHeight": false,
+									"xParam": 1,
+									"yParam": 0.3385416666666667,
+									"widthParam": 1,
+									"heightParam": 1,
+									"isUILabel": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"ANIM_OLD_OUT": 1,
+									"ANIM_NEW_IN": 3,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Green",
+										"fillColor": "white",
+										"textColor": "#212121",
+										"fontSize": 24,
+										"fontFamily": "serif",
+										"enableGradient": true
+									},
+									"events": {
+										"onClick": null,
+										"onChanged": null,
+										"onOnUpdateTransform": null
+									},
+									"images": {
+										"display": 2
+									}
+								},
+								{
+									"type": "ui-button",
+									"name": "ui-button",
+									"w": 211,
+									"h": 80,
+									"x": 95,
+									"y": 256,
+									"text": "Yes",
+									"vTextAlign": "middle",
+									"hTextAlign": "center",
+									"xAttr": 2,
+									"yAttr": 2,
+									"widthAttr": 1,
+									"heightAttr": 0,
+									"wMin": 50,
+									"hMin": 50,
+									"enableAutoScaleFontSize": true,
+									"xParam": 0.13494318181818182,
+									"yParam": 0.6666666666666666,
+									"widthParam": 0.2997159090909091,
+									"heightParam": 1,
+									"isUIButton": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"widthScaleMin": 88,
+									"widthScaleMax": 352,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Green",
+										"fillColor": "#dcdcdc",
+										"textColor": "#383838",
+										"fontSize": 32,
+										"fontFamily": "serif"
+									},
+									"events": {
+										"onClick": "var retCode = 0;\nthis.closeWindow(retCode);",
+										"onOnUpdateTransform": null
+									},
+									"images": {
+										"display": 2
+									}
+								},
+								{
+									"type": "ui-button",
+									"name": "ui-button",
+									"w": 211,
+									"h": 80,
+									"x": 412,
+									"y": 256,
+									"text": "No",
+									"vTextAlign": "middle",
+									"hTextAlign": "center",
+									"xAttr": 2,
+									"yAttr": 2,
+									"widthAttr": 1,
+									"heightAttr": 0,
+									"wMin": 50,
+									"hMin": 50,
+									"enableAutoScaleFontSize": true,
+									"xParam": 0.5852272727272727,
+									"yParam": 0.6666666666666666,
+									"widthParam": 0.2997159090909091,
+									"heightParam": 1,
+									"isUIButton": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"widthScaleMin": 88,
+									"widthScaleMax": 352,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Green",
+										"fillColor": "#dcdcdc",
+										"textColor": "#383838",
+										"fontSize": 32,
+										"fontFamily": "serif"
+									},
+									"events": {
+										"onClick": "var retCode = 0;\nthis.closeWindow(retCode);",
+										"onOnUpdateTransform": null
+									},
+									"images": {
+										"display": 2
+									}
+								},
+								{
+									"type": "ui-color-bar",
+									"name": "ui-color-bar",
+									"w": 570,
+									"h": 64,
+									"x": 75,
+									"y": 213,
+									"text": "",
+									"xAttr": 3,
+									"yAttr": 2,
+									"widthAttr": 1,
+									"heightAttr": 0,
+									"barPosition": 0,
+									"barDierction": 0,
+									"position": 0,
+									"strColors": "#cccccc,#cccccc,#f5f5f5,#f5f5f5",
+									"xParam": 1,
+									"yParam": 0.5546875,
+									"widthParam": 0.8096590909090909,
+									"heightParam": 1,
+									"isUIColorBar": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"isUIButton": false,
+									"widthScaleMin": 252,
+									"widthScaleMax": 1010,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "#dcdcdc",
+										"fillColor": "#C0C0C0",
+										"textColor": "Blue",
+										"fontSize": 24,
+										"fontFamily": "serif",
+										"enableGradient": true
+									},
+									"events": {
+										"onClick": null
+									},
+									"images": {
+										"display": 2
+									}
+								},
+								{
+									"type": "ui-color-bar",
+									"name": "ui-color-bar",
+									"w": 87,
+									"h": 93,
+									"x": 317,
+									"y": 268,
+									"text": "",
+									"xAttr": 3,
+									"yAttr": 2,
+									"widthAttr": 0,
+									"heightAttr": 0,
+									"barPosition": 0,
+									"barDierction": 0,
+									"position": 0,
+									"strColors": "#cccccc,#cccccc,#f5f5f5,#f5f5f5",
+									"xParam": 1,
+									"yParam": 0.6979166666666666,
+									"widthParam": 1,
+									"heightParam": 1,
+									"isUIColorBar": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"isUIButton": false,
+									"barDirection": 1,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "#dcdcdc",
+										"fillColor": "#C0C0C0",
+										"textColor": "Blue",
+										"fontSize": 24,
+										"fontFamily": "serif",
+										"enableGradient": true
+									},
+									"events": {
+										"onClick": null
+									},
+									"images": {
+										"display": 2
+									}
+								}
+							]
 						}
 					]
 				}
@@ -26240,24 +26326,36 @@ var guiData= {
 			"fileurl": "drawapp8/images/common/icons/xxhdpi/add.png"
 		},
 		{
-			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/button_group_bg.9.png",
-			"fileurl": "drawapp8/images/theme/default/android/button_group_bg.9.png"
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/xhdpi/button_blue.9.png",
+			"fileurl": "drawapp8/images/common/icons/xhdpi/button_blue.9.png"
 		},
 		{
-			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/button_focused.9.png",
-			"fileurl": "drawapp8/images/theme/default/android/button_focused.9.png"
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/mdpi/button_blue.9.png",
+			"fileurl": "drawapp8/images/common/icons/mdpi/button_blue.9.png"
 		},
 		{
-			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/button_active.9.png",
-			"fileurl": "drawapp8/images/theme/default/android/button_active.9.png"
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/hdpi/button_blue.9.png",
+			"fileurl": "drawapp8/images/common/icons/hdpi/button_blue.9.png"
 		},
 		{
-			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/button_normal.9.png",
-			"fileurl": "drawapp8/images/theme/default/android/button_normal.9.png"
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/xxhdpi/button_blue.9.png",
+			"fileurl": "drawapp8/images/common/icons/xxhdpi/button_blue.9.png"
 		},
 		{
-			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/button_disable.9.png",
-			"fileurl": "drawapp8/images/theme/default/android/button_disable.9.png"
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/xhdpi/button_blue_active.9.png",
+			"fileurl": "drawapp8/images/common/icons/xhdpi/button_blue_active.9.png"
+		},
+		{
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/mdpi/button_blue_active.9.png",
+			"fileurl": "drawapp8/images/common/icons/mdpi/button_blue_active.9.png"
+		},
+		{
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/hdpi/button_blue_active.9.png",
+			"fileurl": "drawapp8/images/common/icons/hdpi/button_blue_active.9.png"
+		},
+		{
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/xxhdpi/button_blue_active.9.png",
+			"fileurl": "drawapp8/images/common/icons/xxhdpi/button_blue_active.9.png"
 		},
 		{
 			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/xhdpi/btn_left_on.9.png",
@@ -26616,10 +26714,6 @@ var guiData= {
 			"fileurl": "drawapp8/images/theme/default/android/xxhdpi/checkbox_off_focused.png"
 		},
 		{
-			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/dialog.9.png",
-			"fileurl": "drawapp8/images/theme/default/android/dialog.9.png"
-		},
-		{
 			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/xhdpi/tab_item_1_bg_normal.png",
 			"fileurl": "drawapp8/images/common/icons/xhdpi/tab_item_1_bg_normal.png"
 		},
@@ -26850,6 +26944,22 @@ var guiData= {
 		{
 			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/girl.png",
 			"fileurl": "drawapp8/images/girl.png"
+		},
+		{
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/button_focused.9.png",
+			"fileurl": "drawapp8/images/theme/default/android/button_focused.9.png"
+		},
+		{
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/button_active.9.png",
+			"fileurl": "drawapp8/images/theme/default/android/button_active.9.png"
+		},
+		{
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/button_normal.9.png",
+			"fileurl": "drawapp8/images/theme/default/android/button_normal.9.png"
+		},
+		{
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/button_disable.9.png",
+			"fileurl": "drawapp8/images/theme/default/android/button_disable.9.png"
 		},
 		{
 			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/xhdpi/spinning_wheel_bg_center.png",
@@ -27306,6 +27416,14 @@ var guiData= {
 		{
 			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/xxhdpi/line_edit_bg_focused.9.png",
 			"fileurl": "drawapp8/images/theme/default/android/xxhdpi/line_edit_bg_focused.9.png"
+		},
+		{
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/theme/default/android/dialog.9.png",
+			"fileurl": "drawapp8/images/theme/default/android/dialog.9.png"
+		},
+		{
+			"weburl": "http://gamebuilder.sinaapp.com/drawapp8/images/common/icons/dialog_bg_light.9.png",
+			"fileurl": "drawapp8/images/common/icons/dialog_bg_light.9.png"
 		}
 	]
 };

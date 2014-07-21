@@ -13,7 +13,7 @@ var MyLayer = cc.LayerColor.extend({
 	   bg.setPositionY(size.height>> 1);
        this.addChild(bg);
 
-		GameUI.init(cc, this, guiData, size.width, size.height);
+		GameUI.init(cc, this, guiData, cc._canvas);
 		loadScene("win-main");				
 
     }

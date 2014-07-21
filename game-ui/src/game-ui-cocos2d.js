@@ -23,14 +23,15 @@ GameUI.preloadAssetsInUIData = function(uiData, engine) {
 	return images;
 }
 
-GameUI.init = function(game, stage, uiData, viewWidth, viewHeight) {
+GameUI.init = function(game, stage, uiData, view) {
 	var wm = findWindowManager(uiData);
 
 	GameUI.game = game;
 	GameUI.stage = stage;
 	GameUI.uiData = uiData;
-	GameUI.viewWidth = viewWidth;
-	GameUI.viewHeight = viewHeight;
+	GameUI.view = view;
+	GameUI.viewWidth = view.width;
+	GameUI.viewHeight = view.height;
 
 	CanTK.init();
 
