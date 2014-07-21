@@ -2,6 +2,11 @@ var Adapter = {};
 
 Adapter.init = function() {
 	Adapter.engine = cc;
+	var scaleX = cc.view.getScaleX();
+	var scaleY = cc.view.getScaleX();
+
+	GameUI.viewWidth = GameUI.viewWidth / scaleX;
+	GameUI.viewHeight = GameUI.viewHeight / scaleY;
 
 	Adapter.loadAssets = function(srcs) {
 		return;

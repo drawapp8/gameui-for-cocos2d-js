@@ -3,7 +3,11 @@ cc.game.onStart = function(){
     var screenSize = cc.view.getFrameSize();
 
    	cc.loader.resPath = "";
-	if(screenSize.width > 1000) {
+	if(cc.sys.isMobile) {
+    	designSize.width = screenSize.width;
+    	designSize.height = screenSize.height;
+    }
+    else {
     	designSize.height = screenSize.height;
    	 	designSize.width = designSize.height * 0.6;
     }
@@ -12,7 +16,10 @@ cc.game.onStart = function(){
     //load resources
     var images = GameUI.preloadAssetsInUIData(guiData);
 
-	g_resources.concat(images);
+	for(var i = 0; i < images.length; i++) {
+		g_resources.push(images[i]);
+	}
+
     cc.LoaderScene.preload(g_resources, function () {
         cc.director.runScene(new MyScene());
     }, this);
