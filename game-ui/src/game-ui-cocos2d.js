@@ -3,7 +3,7 @@ GameUI = function() {
 
 };
 
-GameUI.preloadAssetsInUIData = function(uiData, engine) {
+GameUI.preloadAssetsInUIData = function(uiData) {
 	var images = [];
 	var wm = findWindowManager(uiData);
 
@@ -971,7 +971,7 @@ GameUI.createUISprite = function(cantkWidget, x, y, width, height, onClose, init
 		var dx = this.getMoveAbsDeltaX();
 		var dy = this.getMoveAbsDeltaY();
 
-		return Math.abs(dx) < 5 || Math.abs(dy) < 5;
+		return Math.abs(dx) < 5 && Math.abs(dy) < 5;
 	}
 
 	//////////////////////////////////////////////////////////////
@@ -984,14 +984,16 @@ GameUI.createUISprite = function(cantkWidget, x, y, width, height, onClose, init
 		return;
 	}
 
-	sprite.updateWidget = function()	{
+	sprite.updateWidget = function(firstTime)	{
 		var ctx = this.getCanvas2D();
 
 		this.updateCount++;
 
 		this.widget.setPosition(0, 0);
 		this.widget.setSize(this.canvas.width, this.canvas.height);
-		this.widget.relayoutChildren();
+		if(firstTime) {
+			this.widget.relayoutChildren();
+		}
 
 		ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 		this.widget.paintSelf(ctx);
@@ -1048,7 +1050,7 @@ GameUI.createUISprite = function(cantkWidget, x, y, width, height, onClose, init
 		}, 20);
 	}
 
-	sprite.updateWidget();
+	sprite.updateWidget(true);
 	sprite.dirty = false;
 
 	sprite.enableInput();
