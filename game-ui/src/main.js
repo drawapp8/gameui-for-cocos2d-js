@@ -2,7 +2,7 @@ GameUI = function() {
 
 };
 
-GameUI.preloadAssetsInUIData = function(uiData, engine) {
+GameUI.preloadAssetsInUIData = function(uiData) {
 	var images = [];
 	var wm = findWindowManager(uiData);
 

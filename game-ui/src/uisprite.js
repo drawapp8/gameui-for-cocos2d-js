@@ -97,7 +97,7 @@ GameUI.createUISprite = function(cantkWidget, x, y, width, height, onClose, init
 		var dx = this.getMoveAbsDeltaX();
 		var dy = this.getMoveAbsDeltaY();
 
-		return Math.abs(dx) < 5 || Math.abs(dy) < 5;
+		return Math.abs(dx) < 5 && Math.abs(dy) < 5;
 	}
 
 	//////////////////////////////////////////////////////////////
