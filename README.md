@@ -13,6 +13,11 @@ Documentation
 --------------------
 ### [Get Started](https://github.com/drawapp8/gameui-for-cocos2d-js/wiki/GetStarted)
 
+### [GameUI Programming Interface](https://github.com/drawapp8/gameui-common/wiki/GameUI-Programming-Interface)
+
+### [GameUI Animation](https://github.com/drawapp8/gameui-common/wiki/GameUI-Animation)
+
+
 UI Editor
 --------------------
 
