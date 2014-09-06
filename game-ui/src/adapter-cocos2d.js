@@ -248,10 +248,14 @@ Adapter.init = function() {
 			sprite.setTexture(texture2d);
 		}
 
-		sprite.getNormalY = function() {
-			var ny = GameUI.viewHeight - sprite.getY();
+		sprite.normalizeY = function(y) {
+			var ny = GameUI.viewHeight - y;
 
 			return ny;
+		}
+
+		sprite.getNormalY = function() {
+			return this.normalizeY(this.getY());
 		}
 
 		sprite.translatePoint = function(touch, event) {
