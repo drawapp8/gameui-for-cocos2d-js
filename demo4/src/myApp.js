@@ -15,6 +15,7 @@ var MyLayer = cc.LayerColor.extend({
 
 		GameUI.init(cc, this, guiData, cc._canvas);
 		loadScene("win-main");				
+
     }
 });
 

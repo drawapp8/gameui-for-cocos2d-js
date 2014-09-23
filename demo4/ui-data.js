@@ -17,6 +17,7 @@ var guiData= {
 	"yParam": 1,
 	"widthParam": 1,
 	"heightParam": 1,
+	"deviceConfig": "{\"name\":\"PC-Portrait\",\"bg\":\"/drawapp8/images/pc-460x740.png\",\"platform\":\"android\",\"version\":\"4\",\"lcdDensity\":\"hdpi\",\"width\":520,\"height\":840,\"screenX\":31,\"screenY\":68,\"screenW\":460,\"screenH\":740,\"hasMenuBar\":false}",
 	"style": {
 		"lineWidth": 2,
 		"lineColor": "Green",
@@ -114,10 +115,12 @@ var guiData= {
 					"isUIElement": true,
 					"hasChildren": true,
 					"showHignlight": true,
+					"designWidth": 460,
+					"designHeight": 740,
 					"style": {
 						"lineWidth": 2,
 						"lineColor": "Green",
-						"fillColor": "white",
+						"fillColor": "#7ecce9",
 						"textColor": "Black",
 						"fontSize": 24,
 						"fontFamily": "serif"
@@ -127,7 +130,9 @@ var guiData= {
 						"onChanged": null
 					},
 					"images": {
-						"display": 2
+						"display": 2,
+						"force-landscape-tips": "cantk-game/assets/images/force_landscape.png",
+						"force-portrait-tips": "cantk-game/assets/images/force_portrait.png"
 					},
 					"children": [
 						{
@@ -145,8 +150,8 @@ var guiData= {
 							"animHint": "htranslate",
 							"xOffset": 0,
 							"yOffset": 0,
-							"virtualWidth": 460,
-							"virtualHeight": 740,
+							"virtualWidth": 0,
+							"virtualHeight": 0,
 							"xParam": 1,
 							"yParam": 1,
 							"widthParam": 1,
@@ -194,10 +199,10 @@ var guiData= {
 									"w": 460,
 									"h": 64,
 									"x": 0,
-									"y": 676,
+									"y": 412,
 									"text": "",
 									"xAttr": 0,
-									"yAttr": 5,
+									"yAttr": 0,
 									"widthAttr": 2,
 									"heightAttr": 0,
 									"density": 0,
@@ -223,7 +228,8 @@ var guiData= {
 									"events": {
 										"onClick": null,
 										"onBeginContact": null,
-										"onEndContact": null
+										"onEndContact": null,
+										"onMoved": null
 									},
 									"images": {
 										"display": 1,
@@ -231,12 +237,239 @@ var guiData= {
 									}
 								},
 								{
+									"type": "ui-frame-animation",
+									"name": "ui-frame-animation",
+									"w": 178,
+									"h": 144,
+									"x": 74,
+									"y": 124,
+									"text": "",
+									"xAttr": 0,
+									"yAttr": 0,
+									"widthAttr": 0,
+									"heightAttr": 0,
+									"current": 0,
+									"frameRate": 5,
+									"startFrame": 0,
+									"endFrame": 0,
+									"playing": false,
+									"autoPlay": true,
+									"repeatTimes": 4294967295,
+									"repeat": 4294967295,
+									"xParam": 1,
+									"yParam": 1,
+									"widthParam": 1,
+									"heightParam": 1,
+									"isUIFrameAnimation": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"value": "/cantk-game/assets/spritesheet/sample.json#image1.png\n/cantk-game/assets/spritesheet/sample.json#image2.png\n/cantk-game/assets/spritesheet/sample.json#image3.png\n/cantk-game/assets/spritesheet/sample.json#image4.png\n/cantk-game/assets/spritesheet/sample.json#image5.png",
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Orange",
+										"fillColor": "White",
+										"textColor": "Blue",
+										"fontSize": 16,
+										"fontFamily": "sans"
+									},
+									"events": {
+										"onClick": "",
+										"onChanged": null,
+										"onOnUpdateTransform": null,
+										"onBeginContact": null,
+										"onEndContact": null,
+										"onMoved": null,
+										"onPointerDown": null,
+										"onPointerMove": null,
+										"onPointerUp": null,
+										"onDoubleClick": null
+									},
+									"images": {
+										"display": 0,
+										"real-image": "cantk-game/assets/spritesheet/sample.png",
+										"option_image_0": "cantk-game/assets/spritesheet/sample.json#image1.png",
+										"option_image_1": "cantk-game/assets/spritesheet/sample.json#image2.png",
+										"option_image_2": "cantk-game/assets/spritesheet/sample.json#image3.png",
+										"option_image_3": "cantk-game/assets/spritesheet/sample.json#image4.png",
+										"option_image_4": "cantk-game/assets/spritesheet/sample.json#image5.png"
+									}
+								},
+								{
+									"type": "ui-bitmap-font-text",
+									"name": "ui-bitmap-font-text",
+									"w": 244,
+									"h": 71,
+									"x": 122,
+									"y": 285,
+									"text": "1234m",
+									"hMargin": 3,
+									"vMargin": 3,
+									"xAttr": 0,
+									"yAttr": 0,
+									"widthAttr": 0,
+									"heightAttr": 0,
+									"textAlignment": "center",
+									"textureJsonURL": "cantk-game/assets/bitmapfonts/digits.json",
+									"wMin": 50,
+									"hMin": 50,
+									"xParam": 1,
+									"yParam": 1,
+									"widthParam": 1,
+									"heightParam": 1,
+									"isUIBitmapFontText": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Orange",
+										"fillColor": "White",
+										"textColor": "Blue",
+										"fontSize": 16,
+										"fontFamily": "sans"
+									},
+									"events": {
+										"onClick": null,
+										"onOnUpdateTransform": null
+									},
+									"images": {
+										"display": 3,
+										"real-image": "cantk-game/assets/bitmapfonts/digits.png"
+									}
+								},
+								{
+									"type": "ui-sprite",
+									"name": "ui-sprite",
+									"w": 137,
+									"h": 137,
+									"x": 237,
+									"y": 162,
+									"text": "",
+									"xAttr": 0,
+									"yAttr": 0,
+									"widthAttr": 0,
+									"heightAttr": 0,
+									"xParam": 1,
+									"yParam": 1,
+									"widthParam": 1,
+									"heightParam": 1,
+									"isUISprite": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Orange",
+										"fillColor": "White",
+										"textColor": "Blue",
+										"fontSize": 16,
+										"fontFamily": "sans"
+									},
+									"events": {
+										"onClick": null,
+										"onOnUpdateTransform": null,
+										"onBeginContact": null,
+										"onEndContact": null,
+										"onMoved": null,
+										"onPointerDown": null,
+										"onPointerMove": null,
+										"onPointerUp": null,
+										"onDoubleClick": null
+									},
+									"images": {
+										"display": -1,
+										"default_bg": "cantk-game/assets/images/sprite.png"
+									}
+								},
+								{
+									"type": "ui-box",
+									"name": "ui-box",
+									"w": 34,
+									"h": 370,
+									"x": 9,
+									"y": 62,
+									"text": "",
+									"xAttr": 0,
+									"yAttr": 0,
+									"widthAttr": 0,
+									"heightAttr": 0,
+									"density": 0,
+									"friction": 0.5,
+									"restitution": 0.5,
+									"xParam": 1,
+									"yParam": 1,
+									"widthParam": 1,
+									"heightParam": 1,
+									"isUIBox": true,
+									"isUIPhysicsShape": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"runtimeVisible": true,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Orange",
+										"fillColor": "rgba(0,0,0,0)",
+										"textColor": "Blue",
+										"fontSize": 16,
+										"fontFamily": "sans"
+									},
+									"events": {
+										"onClick": null,
+										"onBeginContact": null,
+										"onEndContact": null,
+										"onMoved": null
+									},
+									"images": {
+										"display": 0
+									}
+								},
+								{
+									"type": "ui-box",
+									"name": "ui-box",
+									"w": 31,
+									"h": 358,
+									"x": 428,
+									"y": 49,
+									"text": "",
+									"xAttr": 0,
+									"yAttr": 0,
+									"widthAttr": 0,
+									"heightAttr": 0,
+									"density": 0,
+									"friction": 0.5,
+									"restitution": 0.5,
+									"xParam": 1,
+									"yParam": 1,
+									"widthParam": 1,
+									"heightParam": 1,
+									"isUIBox": true,
+									"isUIPhysicsShape": true,
+									"isUIElement": true,
+									"hasChildren": true,
+									"runtimeVisible": true,
+									"style": {
+										"lineWidth": 2,
+										"lineColor": "Orange",
+										"fillColor": "rgba(0,0,0,0)",
+										"textColor": "Blue",
+										"fontSize": 16,
+										"fontFamily": "sans"
+									},
+									"events": {
+										"onClick": null,
+										"onBeginContact": null,
+										"onEndContact": null,
+										"onMoved": null
+									},
+									"images": {
+										"display": 0
+									}
+								},
+								{
 									"type": "ui-circle",
 									"name": "ui-circle",
 									"w": 74,
 									"h": 72,
-									"x": 52,
-									"y": 225,
+									"x": 193,
+									"y": 46,
 									"text": "",
 									"xAttr": 0,
 									"yAttr": 0,
@@ -265,348 +498,56 @@ var guiData= {
 									"events": {
 										"onClick": null,
 										"onBeginContact": null,
-										"onEndContact": null
+										"onEndContact": null,
+										"onMoved": null
 									},
 									"images": {
-										"display": 0,
+										"display": 4,
 										"default_bg": "cantk-game/assets/images/ball.png"
-									}
-								},
-								{
-									"type": "ui-frame-animation",
-									"name": "ui-frame-animation",
-									"w": 161,
-									"h": 141,
-									"x": 156,
-									"y": 177,
-									"text": "",
-									"xAttr": 0,
-									"yAttr": 0,
-									"widthAttr": 0,
-									"heightAttr": 0,
-									"current": 0,
-									"frameRate": 5,
-									"startFrame": 0,
-									"endFrame": 0,
-									"playing": false,
-									"autoPlay": true,
-									"repeat": 4294967295,
-									"xParam": 1,
-									"yParam": 1,
-									"widthParam": 1,
-									"heightParam": 1,
-									"isUIFrameAnimation": true,
-									"isUIElement": true,
-									"hasChildren": true,
-									"value": "/cantk-game/assets/spritesheet/sample.json#image1.png\n/cantk-game/assets/spritesheet/sample.json#image2.png\n/cantk-game/assets/spritesheet/sample.json#image3.png\n/cantk-game/assets/spritesheet/sample.json#image4.png\n/cantk-game/assets/spritesheet/sample.json#image5.png",
-									"style": {
-										"lineWidth": 2,
-										"lineColor": "Orange",
-										"fillColor": "White",
-										"textColor": "Blue",
-										"fontSize": 16,
-										"fontFamily": "sans"
-									},
-									"events": {
-										"onClick": "",
-										"onChanged": null,
-										"onOnUpdateTransform": null,
-										"onBeginContact": null,
-										"onEndContact": null,
-										"onPointerDown": null,
-										"onPointerMove": null,
-										"onPointerUp": null,
-										"onDoubleClick": null
-									},
-									"images": {
-										"option_image_0": "cantk-game/assets/spritesheet/sample.json",
-										"option_image_1": "cantk-game/assets/spritesheet/sample.json",
-										"option_image_2": "cantk-game/assets/spritesheet/sample.json",
-										"option_image_3": "cantk-game/assets/spritesheet/sample.json",
-										"option_image_4": "cantk-game/assets/spritesheet/sample.json",
-										"real-image": "cantk-game/assets/spritesheet/sample.png"
 									},
 									"children": [
 										{
-											"type": "ui-box",
-											"name": "ui-box",
-											"w": 57,
-											"h": 94,
-											"x": 52,
-											"y": 24,
+											"type": "ui-mouse-joint",
+											"name": "ui-mouse-joint",
+											"w": 10,
+											"h": 10,
+											"x": 40,
+											"y": 44,
 											"text": "",
-											"xAttr": 3,
-											"yAttr": 3,
+											"xAttr": 0,
+											"yAttr": 0,
 											"widthAttr": 0,
 											"heightAttr": 0,
-											"density": 1,
-											"friction": 0.5,
-											"restitution": 0.5,
+											"speedScale": 1,
+											"enableTop": true,
+											"enableLeft": true,
+											"enableRight": true,
+											"enableBottom": true,
+											"isUIMouseJoint": true,
+											"isUIJoint": true,
+											"isUIOneJoint": true,
+											"isUIElement": true,
+											"hasChildren": true,
 											"xParam": 1,
 											"yParam": 1,
 											"widthParam": 1,
 											"heightParam": 1,
-											"isUIBox": true,
-											"isUIPhysicsShape": true,
-											"isUIElement": true,
-											"hasChildren": true,
-											"runtimeVisible": false,
-											"fixedRotation": true,
 											"style": {
 												"lineWidth": 2,
 												"lineColor": "Orange",
-												"fillColor": "rgba(0,0,0,0)",
+												"fillColor": "#3eb000",
 												"textColor": "Blue",
 												"fontSize": 16,
 												"fontFamily": "sans"
 											},
 											"events": {
-												"onClick": null,
-												"onBeginContact": null,
-												"onEndContact": null
+												"onClick": null
 											},
 											"images": {
 												"display": 0
 											}
 										}
 									]
-								},
-								{
-									"type": "ui-sound",
-									"name": "ui-sound",
-									"w": 73,
-									"h": 66,
-									"x": 367,
-									"y": 5,
-									"text": "",
-									"xAttr": 0,
-									"yAttr": 0,
-									"widthAttr": 0,
-									"heightAttr": 0,
-									"roundRadius": 3,
-									"value": true,
-									"soundURL": "cantk-game/assets/sound/bg.mp3",
-									"loop": true,
-									"autoPlay": true,
-									"runtimeVisible": true,
-									"repeat": true,
-									"xParam": 1,
-									"yParam": 1,
-									"widthParam": 1,
-									"heightParam": 1,
-									"isUISound": true,
-									"isUICheckBox": true,
-									"isUIElement": true,
-									"hasChildren": true,
-									"style": {
-										"lineWidth": 2,
-										"lineColor": "rgba(0,0,0,0)",
-										"fillColor": "rgba(0,0,0,0)",
-										"textColor": "rgba(0,0,0,0)",
-										"fontSize": 16,
-										"fontFamily": "sans"
-									},
-									"events": {
-										"onClick": "",
-										"onChanged": null,
-										"onOnUpdateTransform": null
-									},
-									"images": {
-										"display": 0,
-										"on_fg": "cantk-game/assets/images/sound-on.png",
-										"off_fg": "cantk-game/assets/images/sound-off.png"
-									}
-								},
-								{
-									"type": "ui-sprite",
-									"name": "ui-sprite",
-									"w": 137,
-									"h": 137,
-									"x": 39,
-									"y": 40,
-									"text": "",
-									"xAttr": 0,
-									"yAttr": 0,
-									"widthAttr": 0,
-									"heightAttr": 0,
-									"xParam": 1,
-									"yParam": 1,
-									"widthParam": 1,
-									"heightParam": 1,
-									"isUISprite": true,
-									"isUIElement": true,
-									"hasChildren": true,
-									"style": {
-										"lineWidth": 2,
-										"lineColor": "Orange",
-										"fillColor": "White",
-										"textColor": "Blue",
-										"fontSize": 16,
-										"fontFamily": "sans"
-									},
-									"events": {
-										"onClick": null,
-										"onOnUpdateTransform": null,
-										"onBeginContact": null,
-										"onEndContact": null,
-										"onPointerDown": null,
-										"onPointerMove": null,
-										"onPointerUp": null,
-										"onDoubleClick": null
-									},
-									"images": {
-										"display": -1,
-										"default_bg": "cantk-game/assets/images/sprite.png"
-									}
-								},
-								{
-									"type": "ui-skeleton-animation",
-									"name": "ui-skeleton-animation",
-									"w": 147,
-									"h": 197,
-									"x": 313,
-									"y": 158,
-									"text": "",
-									"opacity": 0.98,
-									"xAttr": 0,
-									"yAttr": 0,
-									"widthAttr": 0,
-									"heightAttr": 0,
-									"wMin": 50,
-									"hMin": 50,
-									"xParam": 1,
-									"yParam": 1,
-									"widthParam": 1,
-									"heightParam": 1,
-									"skeletonJsonURL": "cantk-game/assets/robot/skeleton.json",
-									"textureJsonURL": "cantk-game/assets/robot/texture.json",
-									"textureURL": "cantk-game/assets/robot/texture.png",
-									"isUIDragonBones": true,
-									"isUIElement": true,
-									"hasChildren": true,
-									"animationScale": 0.5,
-									"isUISkeletonAnimation": true,
-									"style": {
-										"lineWidth": 2,
-										"lineColor": "Orange",
-										"fillColor": "White",
-										"textColor": "Blue",
-										"fontSize": 16,
-										"fontFamily": "sans"
-									},
-									"events": {
-										"onClick": null,
-										"onOnUpdateTransform": null,
-										"onBeginContact": null,
-										"onEndContact": null,
-										"onPointerDown": null,
-										"onPointerMove": null,
-										"onPointerUp": null,
-										"onDoubleClick": null
-									},
-									"images": {
-										"display": 2
-									},
-									"children": [
-										{
-											"type": "ui-box",
-											"name": "ui-box",
-											"w": 72,
-											"h": 124,
-											"x": 38,
-											"y": 37,
-											"text": "",
-											"xAttr": 3,
-											"yAttr": 3,
-											"widthAttr": 0,
-											"heightAttr": 0,
-											"density": 1,
-											"friction": 0.5,
-											"restitution": 0.5,
-											"xParam": 1,
-											"yParam": 1,
-											"widthParam": 1,
-											"heightParam": 1,
-											"isUIBox": true,
-											"isUIPhysicsShape": true,
-											"isUIElement": true,
-											"hasChildren": true,
-											"runtimeVisible": false,
-											"style": {
-												"lineWidth": 2,
-												"lineColor": "Orange",
-												"fillColor": "rgba(0,0,0,0)",
-												"textColor": "Blue",
-												"fontSize": 16,
-												"fontFamily": "sans"
-											},
-											"events": {
-												"onClick": null,
-												"onBeginContact": null,
-												"onEndContact": null
-											},
-											"images": {
-												"display": 0
-											}
-										}
-									]
-								},
-								{
-									"type": "ui-transform-animation",
-									"name": "ui-transform-animation",
-									"w": 101,
-									"h": 96,
-									"x": 170,
-									"y": 53,
-									"text": "",
-									"xAttr": 0,
-									"yAttr": 0,
-									"widthAttr": 0,
-									"heightAttr": 0,
-									"xParam": 1,
-									"yParam": 1,
-									"widthParam": 1,
-									"heightParam": 1,
-									"isUITransformAnimation": true,
-									"isUISprite": true,
-									"isUIElement": true,
-									"hasChildren": true,
-									"style": {
-										"lineWidth": 2,
-										"lineColor": "Orange",
-										"fillColor": "White",
-										"textColor": "Blue",
-										"fontSize": 16,
-										"fontFamily": "sans"
-									},
-									"events": {
-										"onClick": null,
-										"onOnUpdateTransform": null,
-										"onBeginContact": null,
-										"onEndContact": null,
-										"onPointerDown": null,
-										"onPointerMove": null,
-										"onPointerUp": null,
-										"onDoubleClick": null
-									},
-									"images": {
-										"display": -1,
-										"default_bg": "cantk-game/assets/images/trans-anim.png"
-									},
-									"animationConfig": {
-										"opacityFrom": 0.1,
-										"opacityTo": 1,
-										"scaleFrom": 0.6,
-										"scaleTo": 1,
-										"rotationFrom": -0.2617993877991494,
-										"rotationTo": 0.08726646259971647,
-										"offsetXFrom": 0,
-										"offsetXTo": 0,
-										"offsetYFrom": 0,
-										"offsetYTo": 0,
-										"random": 0,
-										"frequency": 2
-									}
 								}
 							]
 						}
@@ -844,52 +785,40 @@ var guiData= {
 	],
 	"fileList": [
 		{
+			"weburl": "http://www.drawapp8.net/cantk-game/assets/images/force_landscape.png",
+			"fileurl": "cantk-game/assets/images/force_landscape.png"
+		},
+		{
+			"weburl": "http://www.drawapp8.net/cantk-game/assets/images/force_portrait.png",
+			"fileurl": "cantk-game/assets/images/force_portrait.png"
+		},
+		{
 			"weburl": "http://www.drawapp8.net/cantk-game/assets/images/grass.png",
 			"fileurl": "cantk-game/assets/images/grass.png"
-		},
-		{
-			"weburl": "http://www.drawapp8.net/cantk-game/assets/images/ball.png",
-			"fileurl": "cantk-game/assets/images/ball.png"
-		},
-		{
-			"weburl": "http://www.drawapp8.net/cantk-game/assets/spritesheet/sample.json",
-			"fileurl": "cantk-game/assets/spritesheet/sample.json"
 		},
 		{
 			"weburl": "http://www.drawapp8.net/cantk-game/assets/spritesheet/sample.png",
 			"fileurl": "cantk-game/assets/spritesheet/sample.png"
 		},
 		{
-			"weburl": "http://www.drawapp8.net/cantk-game/assets/sound/bg.mp3",
-			"fileurl": "cantk-game/assets/sound/bg.mp3"
+			"weburl": "http://www.drawapp8.net/cantk-game/assets/spritesheet/sample.json",
+			"fileurl": "cantk-game/assets/spritesheet/sample.json"
 		},
 		{
-			"weburl": "http://www.drawapp8.net/cantk-game/assets/images/sound-on.png",
-			"fileurl": "cantk-game/assets/images/sound-on.png"
+			"weburl": "http://www.drawapp8.net//cantk-game/assets/bitmapfonts/digits.json",
+			"fileurl": "cantk-game/assets/bitmapfonts/digits.json"
 		},
 		{
-			"weburl": "http://www.drawapp8.net/cantk-game/assets/images/sound-off.png",
-			"fileurl": "cantk-game/assets/images/sound-off.png"
+			"weburl": "http://www.drawapp8.net/cantk-game/assets/bitmapfonts/digits.png",
+			"fileurl": "cantk-game/assets/bitmapfonts/digits.png"
 		},
 		{
 			"weburl": "http://www.drawapp8.net/cantk-game/assets/images/sprite.png",
 			"fileurl": "cantk-game/assets/images/sprite.png"
 		},
 		{
-			"weburl": "http://www.drawapp8.net//cantk-game/assets/robot/texture.json",
-			"fileurl": "cantk-game/assets/robot/texture.json"
-		},
-		{
-			"weburl": "http://www.drawapp8.net//cantk-game/assets/robot/texture.png",
-			"fileurl": "cantk-game/assets/robot/texture.png"
-		},
-		{
-			"weburl": "http://www.drawapp8.net//cantk-game/assets/robot/skeleton.json",
-			"fileurl": "cantk-game/assets/robot/skeleton.json"
-		},
-		{
-			"weburl": "http://www.drawapp8.net/cantk-game/assets/images/trans-anim.png",
-			"fileurl": "cantk-game/assets/images/trans-anim.png"
+			"weburl": "http://www.drawapp8.net/cantk-game/assets/images/ball.png",
+			"fileurl": "cantk-game/assets/images/ball.png"
 		}
 	]
 };
